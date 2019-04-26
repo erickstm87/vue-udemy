@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    </head>
+    <body>
+        <div id='application'>
+            <h1>Hello from {{ greeting }}</h1>
+            <br />
+            <input v-model='message' /> 
+            <br />
+            <p v-if='showName'>Mario</p>
+            <button @click='toggleName'>Toggle Name Property: {{showName}}</button>
+        </div>
+        <script src='app.js' />
+    </body>
+</html>
